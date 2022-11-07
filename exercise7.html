@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 7</title>
+</head>
+<body>
+    <script>
+        function show(Numofmonth){
+          console.log(Numofmonth)
+        }
+
+        function Daysofmonth(Numofmonth){
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] 
+            const days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            if(Numofmonth >= 1 && Numofmonth <= 12)
+             return  `${days[Numofmonth -1 ] } days there are in ${months[Numofmonth - 1]} month` 
+            else return -1
+        }
+        console.log(Daysofmonth(10))
+    </script>
+</body>
+</html>

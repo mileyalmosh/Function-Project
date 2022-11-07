@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 3</title>
+</head>
+<body>
+    <script>
+        function Print(a, y, z, m) {
+           console.log(a, y, z, m)
+        }
+
+        function smallnum(a, y, z, m) {
+            const arr = [a, y, z, m]
+            for(let i = 0; i < arr.length; i++) {
+                if (arr[i] >= 1 && arr[i] <= 5) {
+                    return -1;
+                } 
+            }
+            let min = Math.min (arr)
+            return min;
+       }
+       console.log(Print(smallnum(30, 5, 12, 18)))
+    </script>
+</body>
+</html>
